@@ -23,7 +23,7 @@
             <children>
 
                 <!-- FORMULARIO CLIENTE -->
-                <AnchorPane prefWidth="70.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane prefWidth="70.0" style="-fx-border-color: #BDC3C7; -fx-border-radius: 8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0">
                     <children>
                         <GridPane hgap="20" vgap="25" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
                             <columnConstraints>
@@ -70,7 +70,7 @@
                 </AnchorPane>
 
                 <!-- BOTONES -->
-                <AnchorPane prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane layoutX="874.0" layoutY="21.0" prefHeight="338.0" prefWidth="250.0" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="21.0">
                     <children>
                         <VBox alignment="CENTER" spacing="15" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
                             <children>
