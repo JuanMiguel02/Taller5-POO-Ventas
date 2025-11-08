@@ -25,8 +25,9 @@ Aplicación de escritorio desarrollada con **JavaFX** que permite gestionar clie
 ## Instalación y Ejecución
 
 ```bash
-mvn clean compile
+https://github.com/JuanMiguel02/Taller5-POO-Ventas.git
 ```
+
 
 ### Compilar el proyecto
 
