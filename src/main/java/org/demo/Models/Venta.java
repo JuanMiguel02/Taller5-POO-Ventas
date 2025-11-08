@@ -1,6 +1,7 @@
 package org.demo.Models;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
@@ -93,6 +94,10 @@ public class Venta {
         this.precioUnitario = precioUnitario;
     }
 
+    public String getFechaFormateada(){
+        return this.fecha.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm"));
+    }
+
     /**
      * Calcula el total de la venta multiplicando el precio unitario por la cantidad.
      * Lanza una excepción si no hay stock suficiente del producto.
@@ -123,7 +128,7 @@ public class Venta {
                 ", cliente: " + cliente.getNombre() +
                 ", producto: " + producto +
                 ", precioUnitario: " + precioUnitario +
-                ", fecha: " + fecha +
+                ", fecha: " + getFechaFormateada() +
                 ", cantidad: " + cantidad +
                 ", total: " + total + '\n';
     }

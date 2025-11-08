@@ -86,7 +86,7 @@ public class ProductosController {
             }
             String categoria = txtCategoria.getText();
 
-            Producto producto = new Producto(precio, nombre, cantidad, categoria);
+            Producto producto = new Producto(nombre, precio, cantidad, categoria);
             productoRepository.guardarProducto(producto);
             mostrarAlerta("Éxito", "Producto: " + producto.getNombre()
                     + " $" + producto.getPrecio() + " Registrado Éxitosamente", Alert.AlertType.INFORMATION);

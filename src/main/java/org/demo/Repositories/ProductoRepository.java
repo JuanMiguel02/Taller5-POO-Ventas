@@ -117,9 +117,9 @@ public class ProductoRepository {
      * Los datos son utilizados con fines demostrativos.
      */
     private void cargarDatosEjemplo(){
-        Producto p1 = new Producto(2000, "Coca Cola", 3, "Bebida");
-        Producto p2 = new Producto(4500, "Detódito", 5, "Mecato");
-        Producto p3 = new Producto(3000, "Chocorramo", 4, "Mecato");
+        Producto p1 = new Producto("Coca Cola", 2000, 3, "Bebida");
+        Producto p2 = new Producto("Detódito", 4500, 5, "Mecato");
+        Producto p3 = new Producto("Chocorramo", 3000, 4, "Mecato");
 
         guardarProducto(p1);
         guardarProducto(p2);

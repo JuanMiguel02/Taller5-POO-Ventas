@@ -51,7 +51,7 @@ public class VentasController {
         ventaRepository = VentaRepository.getInstancia();
 
         colId.setCellValueFactory(new PropertyValueFactory<>("id"));
-        colFecha.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getFecha().toString()));
+        colFecha.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getFechaFormateada()));
         colCliente.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getCliente().getNombre()));
         colProducto.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getProducto().getNombre()));
         colPrecio.setCellValueFactory(new PropertyValueFactory<>("precioUnitario"));
@@ -118,6 +118,14 @@ public class VentasController {
         }
     }
 
+    /**
+     * Maneja la acción del botón "Limpiar".
+     * Limpia todos los campos del formulario.
+     */
+    @FXML
+    private void onLimpiarCampos(){
+        limpiarCampos();
+    }
 
     /**
      * Carga todas las ventas registradas en la tabla.
