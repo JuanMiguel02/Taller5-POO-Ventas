@@ -139,7 +139,6 @@ public class VentasController {
      * Limpia todos los campos del formulario de venta.
      */
     private void limpiarCampos(){
-        txtFecha.clear();
         txtPrecio.clear();
         txtCantidad.clear();
         txtTotal.clear();
@@ -152,7 +151,7 @@ public class VentasController {
      * Actualiza el campo de total en tiempo real.
      */
     private void actualizarTotal(){
-        Producto productoSeleccionado =cmbProductos.getSelectionModel().getSelectedItem();
+        Producto productoSeleccionado = cmbProductos.getSelectionModel().getSelectedItem();
         if(productoSeleccionado == null){
             txtTotal.clear();
             return;
@@ -163,8 +162,9 @@ public class VentasController {
 
         try{
             cantidad = Integer.parseInt(txtCantidad.getText());
-            if(cantidad < 0){
+            if(cantidad <= 0){
                 mostrarAlerta("Ingrese una cantidad válida");
+                txtCantidad.requestFocus();
                 return;
             }
         }catch(NumberFormatException e){

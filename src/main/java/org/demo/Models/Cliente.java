@@ -70,11 +70,11 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente:" +
-                  nombre + '\'' +
-                ", documento: " + documento + '\'' +
-                ", telefono: " + telefono + '\'' +
-                ", direccion: " + direccion + '\'' +
+        return "Cliente: " +
+                  nombre + 
+                ", documento: " + documento + 
+                ", telefono: " + telefono + 
+                ", direccion: " + direccion + 
                 ", correo: " + correo + "\n"
                 ;
     }

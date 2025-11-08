@@ -3,7 +3,6 @@ module org.demo {
     requires javafx.fxml;
     requires javafx.graphics;
 
-
     opens org.demo to javafx.fxml;
     opens org.demo.Controllers to javafx.fxml;
     opens org.demo.Models to javafx.fxml;

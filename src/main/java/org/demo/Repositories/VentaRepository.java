@@ -38,6 +38,9 @@ public class VentaRepository {
         Producto p1 = new Producto("Botella Agua", 1500, 3, "Bebida");
         Producto p2 = new Producto("Leche", 2000, 2, "Lácteo");
 
+        ProductoRepository.getInstancia().guardarProducto(p1);
+        ProductoRepository.getInstancia().guardarProducto(p2);
+
         Venta v1 = new Venta(c1, p1, 2);
         Venta v2 = new Venta(c2, p2, 1);
 
